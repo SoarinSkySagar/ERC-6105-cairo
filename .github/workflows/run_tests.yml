@@ -17,10 +17,10 @@ jobs:
           scarb-lock: ./Scarb.lock
 
       - name: Build contracts
-        run: scarb Build
+        run: scarb build
 
       - name: Run scarb fmt --check
         run: scarb fmt --check
 
       - name: Run tests
-        run: snforge test
+        run: scarb test
